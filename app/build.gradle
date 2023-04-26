@@ -14,7 +14,7 @@ android {
         viewBinding = true
     }
     defaultConfig {
-        applicationId "com.example.giphyapp"
+        applicationId "com.example.testtask"
         minSdk 22
         targetSdk 33
         versionCode 1

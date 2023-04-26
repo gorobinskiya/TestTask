@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#716969"
+    android:background="@color/grey"
     android:orientation="vertical">
 
 
@@ -11,11 +11,11 @@
         android:id="@+id/etNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
         android:backgroundTint="@color/black"
         android:gravity="center"
-        android:hint="Enter number"
+        android:hint="@string/enter_number"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
@@ -29,35 +29,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:layout_marginHorizontal="16dp"/>
+        android:layout_marginHorizontal="@dimen/small_margin"/>
     <ProgressBar
         android:id="@+id/pbLoading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
-        tools:visibility="visible"
-        android:layout_marginBottom="16dp"/>
+        android:visibility="gone"
+        tools:visibility="gone"
+        android:layout_marginBottom="@dimen/small_margin"/>
 
     <Button
         android:id="@+id/btnGetFact"
-        android:text="Get fact"
+        android:text="@string/get_fact"
         android:layout_width="match_parent"
+        android:backgroundTint="@color/teal_700"
         android:textSize="16sp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="@dimen/small_margin"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnGetRandomFact"
-        android:text="Random fact"
+        android:text="@string/random_fact"
         android:layout_width="match_parent"
-        android:layout_marginTop="16dp"
-        android:textSize="16sp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textSize="@dimen/text_size"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginHorizontal="@dimen/small_margin"
         android:layout_height="wrap_content"/>
 
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/small_margin"
         android:background="@color/black"/>
 
 
@@ -65,8 +67,8 @@
         android:id="@+id/rvHistory"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingHorizontal="16dp"
-        android:paddingTop="16dp"
+        android:paddingHorizontal="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
         tools:listitem="@layout/history_item"/>
 
 </LinearLayout>
